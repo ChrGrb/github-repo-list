@@ -1,5 +1,6 @@
 import React from 'react';
 import { Repository } from '../types/graphql';
+import LanguageCard from './languageCard';
 
 type Props = {
     repository: Repository
@@ -13,12 +14,7 @@ const RepositoryCard = ({ repository }: Props) => {
                     <span className="text-lg font-bold">{repository.name}</span>
                     <span>{repository.description ?? ""}</span>
                     <div className="h-3"></div>
-                    <div className="flex justify-start gap-3">
-                        <div className="flex gap-2 rounded-full bg-slate-100 text-slate-500 px-2 py-1">
-                            <div className="h-2 w-2 rounded-full bg-cyan-700 my-auto"></div>
-                            <span className="text-xs">{repository.primaryLanguage.name}</span>
-                        </div>
-                    </div>
+                    <LanguageCard language={repository.primaryLanguage} />
                 </div>
                 <div>
                     <button className="flex gap-2 bg-slate-100 text-slate-500 font-light px-3 py-1 rounded-md hover:bg-green-300 hover:text-slate-100 transition-colors">
