@@ -1,5 +1,6 @@
 type Repository {
     description: String
+    id: ID!
     name: String!
     primaryLanguage: Language
     url: String!

@@ -22,6 +22,7 @@ export type Language = {
 export type Repository = {
   __typename?: 'Repository';
   description?: Maybe<Scalars['String']>;
+  id: Scalars['ID'];
   name: Scalars['String'];
   primaryLanguage?: Maybe<Language>;
   url: Scalars['String'];
