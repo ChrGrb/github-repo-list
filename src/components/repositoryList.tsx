@@ -1,8 +1,8 @@
 import React from "react";
-import { Repository } from "../types/graphql";
-import Searchbar from "./searchbar";
-import RepositoryCard from "./repositoryCard";
-import Divider from "./divider";
+import { Repository } from "@/types/graphql";
+import Searchbar from "@/components/searchbar";
+import RepositoryCard from "@/components/repositoryCard";
+import Divider from "@/components/divider";
 
 type Props = {
     repositories: Repository[]
