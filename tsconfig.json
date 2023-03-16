@@ -22,8 +22,11 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "codegen.ts",
+    "components"
   ],
   "rootDir": "src",
-  "outDir": "build"
+  "outDir": "build",
+  "extends": "./tsconfig.paths.json"
 }
