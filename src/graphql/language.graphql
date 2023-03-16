@@ -1,0 +1,4 @@
+type Language {
+    color: String
+    name: String!
+}

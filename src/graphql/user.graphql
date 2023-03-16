@@ -1,0 +1,6 @@
+type User {
+    avatarUrl: String
+    bio: String
+    login: String!
+    name: String
+}

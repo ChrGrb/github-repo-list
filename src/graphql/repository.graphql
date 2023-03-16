@@ -1,0 +1,6 @@
+type Repository {
+    description: String
+    name: String!
+    primaryLanguage: Language
+    url: String!
+}
