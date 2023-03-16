@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from './components/button';
+import User from './components/user';
+import Searchbar from './components/searchbar';
+import Repository from './components/repository';
+import Divider from './components/divider';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="flex flex-col">
+      <div className="container mx-auto w-full flex">
+        <div className="bg-slate-100 p-10 basis-1/3">
+          {/* Profile Section */}
+          <User />
+        </div>
+        <div className="bg-slate-500 p-10 flex-auto">
+          {/* Main Section */}
+          {/* Search Bar */}
+          <Searchbar />
+
+          {/* Spacer */}
+          <div className="h-10"></div>
+
+          {/* Search Results */}
+          <div className="flex flex-col">
+            {/* Search Result */}
+            <Repository />
+            <Divider />
+            <Repository />
+          </div>
+        </div>
+      </div>
+    </div >
   );
 }
 
