@@ -1,11 +1,8 @@
 import React from 'react';
-import UserCard from './components/userCard';
-import Searchbar from './components/searchbar';
-import RepositoryCard from './components/repositoryCard';
-import Divider from './components/divider';
+import UserCard from '@/components/userCard';
 
-import { User, Repository } from './types/graphql';
-import RepositoryList from './components/repositoryList';
+import { User, Repository } from '@/types/graphql';
+import RepositoryList from '@/components/repositoryList';
 
 const testUser: User = {
   avatarUrl: "https://avatars.githubusercontent.com/u/1?v=4",
@@ -45,16 +42,15 @@ const testRepositories: Repository[] = [{
 
 function App() {
   return (
-    <div className="flex flex-col bg-slate-100 py-10">
+    <div className="flex flex-col bg-slate-100 py-10 h-screen-dhv">
       <div className="container mx-auto w-full flex flex-col md:flex-row">
+        {/* Profile Section */}
         <div className="bg-slate-100 p-10 basis-1/3">
-          {/* Profile Section */}
           <UserCard user={testUser} />
         </div>
+        {/* Main Section */}
         <div className="bg-slate-500 p-10 flex-auto rounded-md">
-          {/* Main Section */}
           <RepositoryList repositories={testRepositories} />
-
         </div>
       </div>
     </div >

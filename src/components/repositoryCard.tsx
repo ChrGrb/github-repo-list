@@ -9,14 +9,14 @@ type Props = {
 // Displays repository with information
 const RepositoryCard = ({ repository }: Props) => {
     return (
-        <>
+        <div data-testid="repository-card">
             {/* Link that opens repository when clicked */}
             <a href={repository.url}>
                 <span className="flex flex-col sm:flex-row justify-between w-full rounded-md text-slate-100 px-3 my-5">
                     {/* Repository Name and Description */}
                     <div className="flex-auto flex flex-col">
-                        <span className="text-lg font-bold">{repository.name}</span>
-                        <span>{repository.description ?? ""}</span>
+                        <span data-testid="repository-name" className="text-lg font-bold">{repository.name}</span>
+                        <span data-testid="repository-description" >{repository.description ?? ""}</span>
                         <div className="h-3"></div>
                         <LanguageCard language={repository.primaryLanguage} />
                     </div>
@@ -33,7 +33,7 @@ const RepositoryCard = ({ repository }: Props) => {
 
                 </span>
             </a>
-        </>
+        </div>
     );
 };
 
