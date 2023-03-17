@@ -1,8 +1,8 @@
 import React from 'react';
-import UserCard from '@/components/userCard';
+import UserCard from '@/components/UserCard';
 
 import { User, Repository } from '@/types/graphql';
-import RepositoryList from '@/components/repositoryList';
+import RepositoryList from '@/components/RepositoryList';
 
 const testUser: User = {
   avatarUrl: "https://avatars.githubusercontent.com/u/1?v=4",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Repository } from '@/types/graphql';
-import LanguageCard from '@/components/languageCard';
+import LanguageCard from '@/components/LanguageCard';
 
 type Props = {
     repository: Repository

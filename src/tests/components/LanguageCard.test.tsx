@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import LanguageCard from '@/components/languageCard';
+import LanguageCard from '@/components/LanguageCard';
 import { Language } from '@/types/graphql';
 import mockLanguage from '@/tests/mockData/language';
 

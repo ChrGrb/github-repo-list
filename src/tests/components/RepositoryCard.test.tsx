@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import RepositoryCard from '@/components/repositoryCard';
+import RepositoryCard from '@/components/RepositoryCard';
 import mockRepositories from '../mockData/repositories';
 
 const mockRepository = mockRepositories[0];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import Searchbar from '@/components/searchbar';
+import Searchbar from '@/components/Searchbar';
 
 describe('Searchbar component', () => {
     it('calls the onSearchTermChange function with the new search term', () => {

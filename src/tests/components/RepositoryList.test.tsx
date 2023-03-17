@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import RepositoryList from '@/components/repositoryList';
+import RepositoryList from '@/components/RepositoryList';
 import mockRepositories from '@/tests/mockData/repositories';
 
 

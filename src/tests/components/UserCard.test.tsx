@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import UserCard from '@/components/userCard';
+import UserCard from '@/components/UserCard';
 import mockUser from '@/tests/mockData/user';
 
 describe('UserCard component', () => {
