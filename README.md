@@ -2,6 +2,10 @@
 
 This Project allows you to list all projects of a github login and filter them with a search bar. It also displays essential information about the provided login.
 
+## Deployment
+
+The site is deployed using Netlify and can be viewed [https://github-repo-list.zack-bumm.com/](https://github-repo-list.zack-bumm.com/)
+
 ## Setup
 
 - To use the application first run `yarn install` to install the necessary node modules.
@@ -43,6 +47,7 @@ You can view it by opening [http://localhost:6006](http://localhost:6006)
 - Implement codegen to automatically create react hooks for queries
 - Add GraphQL loading and error feedback in frontend
 - Add search functionality for users, so the login does not have to be defined in code
+- Add different graphql mocks to test error reponses or users without repositories
 
 
 ## Feedback

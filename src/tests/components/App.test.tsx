@@ -17,6 +17,7 @@ describe('App', () => {
             </MockedProvider>
         );
 
+        // Wait for the query to resolve
         // eslint-disable-next-line testing-library/no-unnecessary-act
         await act(async () => {
             await wait(1000);
