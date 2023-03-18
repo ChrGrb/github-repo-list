@@ -28,6 +28,13 @@ Runs the test suite inside the terminal.
 
 Converts all graphql schemas defined in `src/graphql/*` to TypeScript types.
 
+### `yarn storybook`
+
+Starts storybook.\
+You can view it by opening [http://localhost:6006](http://localhost:6006)
+
+
+
 
 ## Future improvements
 
