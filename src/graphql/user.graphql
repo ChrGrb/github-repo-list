@@ -3,4 +3,5 @@ type User {
     bio: String
     login: String!
     name: String
+    repositories(first: Int): RepositoryConnection!
 }

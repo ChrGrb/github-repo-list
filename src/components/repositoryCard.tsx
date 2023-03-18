@@ -18,7 +18,7 @@ const RepositoryCard = ({ repository }: Props) => {
                         <span data-testid="repository-name" className="text-lg font-bold">{repository.name}</span>
                         <span data-testid="repository-description" >{repository.description ?? ""}</span>
                         <div className="h-3"></div>
-                        <LanguageCard language={repository.primaryLanguage} />
+                        {repository.primaryLanguage && <LanguageCard language={repository.primaryLanguage} />}
                     </div>
                     {/* Star repository button */}
                     <div className="mt-4 sm:mt-0">

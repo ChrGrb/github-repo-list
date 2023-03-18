@@ -1,0 +1,4 @@
+type Query {
+    user(login: String!): User
+    repositories(first: Int): RepositoryConnection
+}
