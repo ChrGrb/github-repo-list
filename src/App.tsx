@@ -6,14 +6,17 @@ import RepositoryList from '@/components/RepositoryList';
 
 import { useQuery } from '@apollo/client';
 import { loader } from 'graphql.macro';
+// Load graphql query from file
 const GetUserByLogin = loader('./graphql/queries/getUser.graphql');
 
 
 function App() {
+  // Load data from graphql query and store it in typed variables
   const { loading, error, data } = useQuery<GetUserByLoginQuery>(GetUserByLogin, { variables: { login: "octocat" } });
 
   return (
     <div className="flex flex-col bg-slate-100 py-10 min-h-screen-dhv" >
+      {/* Display data only if loading is done and the query completed successfully */}
       {!loading && !error && data &&
         <div className="container mx-auto w-full flex flex-col md:flex-row">
           {/* Profile Section */}
