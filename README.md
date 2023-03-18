@@ -42,6 +42,7 @@ You can view it by opening [http://localhost:6006](http://localhost:6006)
 - Implement mutations to make the star button usable
 - Implement codegen to automatically create react hooks for queries
 - Add GraphQL loading and error feedback in frontend
+- Add search functionality for users, so the login does not have to be defined in code
 
 
 ## Feedback
