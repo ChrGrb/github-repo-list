@@ -34,7 +34,8 @@ const RepositoryList = ({ repositories }: Props) => {
                 {/* Search Result */}
                 {filteredRepositories.map((repository, index) => (
                     <div key={repository.id}>
-                        <RepositoryCard repository={repository} />
+                        {/* Repository Card with dummy star button */}
+                        <RepositoryCard repository={repository} onStar={(repository: Repository) => (console.log("Repository starred"))} />
                         {/* Divider, if not last repository */}
                         {index !== filteredRepositories.length - 1 && < Divider />}
                     </div>
