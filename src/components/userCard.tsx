@@ -8,7 +8,7 @@ type Props = {
 // Displays user profile
 const UserCard = ({ user }: Props) => {
     return (
-        <>
+        <div data-testid="user-card">
             <div className="flex flex-col rounded-md bg-slate-500 p-0 overflow-hidden">
                 {/* Profile Image  */}
                 <img className="aspect-square object-cover" alt={user.avatarUrl ? "avatar" : "placeholder"} src={user.avatarUrl ?? ""} />
@@ -23,7 +23,7 @@ const UserCard = ({ user }: Props) => {
                     </span>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
