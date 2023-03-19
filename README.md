@@ -48,6 +48,7 @@ You can view it by opening [http://localhost:6006](http://localhost:6006)
 - Add GraphQL loading and error feedback in frontend
 - Add search functionality for users, so the login does not have to be defined in code
 - Add different graphql mocks to test error reponses or users without repositories
+- Make queries to API in backend, so GitHub API token is not shown to users
 
 
 ## Feedback
